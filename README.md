@@ -6,5 +6,4 @@ to set this up just compile the solution in the `\source files` directory (i use
 
 if you have problems feel free to send them to pepsi#1213 but don't always expect a reply. i won't spend more than like half an hour helping you fix something unless i get hyperfixated on it
 
-
-the `\properties` directory has some useful stuff too, like the server settings and all that
+the `\properties` directory has some useful stuff too, like the server settings and all that. also i made sure to include the block properties json file so that isn't an issue
