@@ -1,0 +1,14 @@
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\bin\Debug\nas.dll
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\bin\Debug\nas.pdb
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\bin\Debug\MySql.Data.dll
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\obj\Debug\nas.csprojResolveAssemblyReference.cache
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\obj\Debug\nas.dll
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\obj\Debug\nas.pdb
+C:\Users\Burhanuddin\Downloads\Nas\Nas-main\source files\bin\Debug\MCGalaxy_infid.dll
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\obj\Debug\nas.dll
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\obj\Debug\nas.pdb
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\bin\Debug\nas.dll
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\bin\Debug\nas.pdb
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\bin\Debug\MySql.Data.dll
+C:\Users\UP515\OneDrive\Documents\Nas-main\source files\obj\Debug\nas.csprojResolveAssemblyReference.cache

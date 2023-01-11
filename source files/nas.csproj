@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E211DECB-8364-48EE-960A-3E587A5B732C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>nas</RootNamespace>
+    <AssemblyName>nas</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+    <Prefer32Bit>False</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\bin\Release\plugins\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Collision.cs" />
+    <Compile Include="Crafting.Setup.cs" />
+    <Compile Include="Drop.cs" />
+    <Compile Include="NasLevel.Adventure.cs" />
+    <Compile Include="NasTimeCycle.cs" />
+    <Compile Include="NasTimeCycle.IO.cs" />
+    <Compile Include="NasTreeGens.cs" />
+    <Compile Include="ItemProp.Setup.cs" />
+    <Compile Include="NasBlock.Actions.cs" />
+    <Compile Include="NasBlock.CollideActions.cs" />
+    <Compile Include="NasBlock.Interactions.cs" />
+    <Compile Include="NasBlock.Setup.cs" />
+    <Compile Include="NasColor.cs" />
+    <Compile Include="Crafting.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemProp.cs" />
+    <Compile Include="NasBlock.cs" />
+    <Compile Include="NasBlockChange.cs" />
+    <Compile Include="NasEntity.cs" />
+    <Compile Include="NasGen.cs" />
+    <Compile Include="NasLevel.cs" />
+    <Compile Include="NasPlayer.Movement.cs" />
+    <Compile Include="NasPlayerInventory.cs" />
+    <Compile Include="Nas.cs" />
+    <Compile Include="NasPlayer.cs" />
+    <Compile Include="NasTree.cs" />
+    <Compile Include="Priority Queue\FastPriorityQueue.cs" />
+    <Compile Include="Priority Queue\FastPriorityQueueNode.cs" />
+    <Compile Include="Priority Queue\GenericPriorityQueue.cs" />
+    <Compile Include="Priority Queue\GenericPriorityQueueNode.cs" />
+    <Compile Include="Priority Queue\IFixedSizePriorityQueue.cs" />
+    <Compile Include="Priority Queue\IPriorityQueue.cs" />
+    <Compile Include="Priority Queue\SimplePriorityQueue.cs" />
+    <Compile Include="Priority Queue\StablePriorityQueue.cs" />
+    <Compile Include="Priority Queue\StablePriorityQueueNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NasPlayerInventory.Items.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NasLevel.IO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Priority Queue" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MCGalaxy_infid">
+      <HintPath>..\..\..\MCGalaxy-master\bin\Debug\MCGalaxy_infid.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\MCGalaxy-master\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Content Include="nas.sln" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
